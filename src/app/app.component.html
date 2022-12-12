@@ -1,2 +1,17 @@
 <!-- <app-placeholders-home></app-placeholders-home> -->
-<router-outlet></router-outlet>
+
+
+<div class="ui container">
+  <div class="ui secondary pointing menu">
+
+    <!-- herf is used the page reloads
+routerLink is used, only the content of the page changes -->
+    <a routerLinkActive="active" routerLink="/placeholders" class="item">Placeholder</a>
+    <a routerLinkActive="active" routerLink="/tables" class="item">Tables</a>
+
+  </div>
+  <div class="ui segment">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
