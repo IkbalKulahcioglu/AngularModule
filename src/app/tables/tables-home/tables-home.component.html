@@ -2,3 +2,18 @@
     Table
 </app-divider>
 <app-tables></app-tables>
+
+<app-divider>
+    More Details
+</app-divider>
+<app-tabs>
+    <a routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}" class="item">
+        Certificates
+    </a>
+    <a routerLink="./companies" routerLinkActive="active" class="item">
+        Foreign Language
+    </a>
+    <a routerLink="./partners" routerLinkActive="active" class="item">
+        Education
+    </a>
+</app-tabs>
