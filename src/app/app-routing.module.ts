@@ -12,6 +12,10 @@ const routes: Routes = [
     path: 'tables', loadChildren: () =>
       import('./tables/tables.module').then(m => m.TablesModule)
   },
+  {
+    path: 'lists', loadChildren: () =>
+      import('./lists/lists.module').then(m => m.ListsModule)
+  },
   { path: '', component: HomeComponent },
   { path: '**', component: NotFoundComponent }
 ];
