@@ -16,6 +16,10 @@ const routes: Routes = [
     path: 'lists', loadChildren: () =>
       import('./lists/lists.module').then(m => m.ListsModule)
   },
+  {
+    path: 'popups', loadChildren: () =>
+      import('./popups/popups.module').then(m => m.PopupsModule)
+  },
   { path: '', component: HomeComponent },
   { path: '**', component: NotFoundComponent }
 ];
